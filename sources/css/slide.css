@@ -1,0 +1,49 @@
+li{
+	list-style-type:none;
+}
+
+#wrapper{
+	width:800px;
+	margin:0 auto;
+}
+
+#slide ul{
+	position:relative;
+}
+
+#slide li{
+	position:absolute;
+	width:100%;
+}
+
+#button{
+	padding-top:520px;
+	text-align:center;
+}
+
+#button ul{
+	display:inline-block;
+}
+
+#button ul li{
+	float:left;
+	margin-right:15px;
+}
+
+#button ul li:last-child{
+	margin-right:0;
+}
+
+#button ul li a{
+	text-indent:-9999px;
+	text-decoration:none;
+	display:block;
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background:#A8DCDB;
+}
+
+#button ul li a.target{
+	background:#41AFAD;
+}

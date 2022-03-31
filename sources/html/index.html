@@ -1,196 +1,239 @@
 <!DOCTYPE html>
-
-<html lang="ja">
-
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>清原翔のホームページ</title>
-        <link rel="icon" href="hamada_html.ico">
-        <meta name="description" content="濵田のhtmlサイトです">
-
-        <!-- flask のプログラムが入ったファイルからの相対パス -->
-        <link rel="stylesheet" type="text/css" href="sources/css/stylesheet.css"/>
-
-        <!-- cssではなくhtmlに直接文字フォントの調整を行う方法 -->
-    
-        <!-- <style>
-            h1{
-                color:red;
-            }
-        </style> -->
-
-
-
-    <!-- jquery クリック時に画像拡大 -->
-    <link rel="stylesheet" href="https://basefile.akamaized.net/hamadayuuki-buyshop-jp/5f719de654638/zoom.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://basefile.akamaized.net/hamadayuuki-buyshop-jp/5f719e405a419/zoom.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+        <meta charset="UTF-8">
+        <title>mucsle</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
-
     <body>
-
-        <header>
-
-            <div class="container">
-
-                <div class="icon">
-                    <img src="sources/img/清原翔_1.jpg" width="300" height="300" alt="画像の表示なし">
-                    
-                </div>
-                
-                <div class="info">
-                    
-                    <h1>清原翔</h1>
-                    <p>モデルです。</p><br>
-
-                    <ul>
-                        <!-- ※ 画像にリンクを貼りたい時には <img> </img> タグを <a> </a> タグで括る -->
-
-                        <li>
-                            <a href="https://www.kagoshima-u.ac.jp" target="_blank">
-                                <img src="sources/img/icon_kagoshimaUni.png" width="120" height="50" alt="ブログサイトのリンク画像です">
-                            </a>
-                        </li>
-            
-            
-                        <li>
-                            <a href="https://www.stardust.co.jp/section1/profile/kiyoharasho.html" target="_blank">
-                                <img src="sources/img/icon_kiyohara.png" width="120" height="50" alt="写真サイトのリンク画像です">
-                            </a>
-            
-                        </li>
-
-                    </ul>
-
-
-                </div>
-
+        <div class="main">
+            <div class="hide" id="msg">
+                <h1>ようこそ</h1>
             </div>
-
-
-
-            
-
-        </header>
-
-
-        <section class="works">
-            <h1>STUDENTS</h1>
-
-            <div class="scroll_Pic ver1"> </div>
-
-
-            <!-- https://www.stardust.co.jp/section1/profile/kiyoharasho.html -->
-            <section>
+            <div id="introduce">
+                <h1>筋トレに興味を持ってくれ</h1>
+            </div>
+            <div class="main-contents">
+                <div class="header">
+                    <figure>
+                        <figcaption>
+                            <h1>Just do it.</h1>
+                        </figcaption>
+                        <img src="img/header.jpg">
+                    </figure>
+                </div>
+                <ul class="nav">
+                    <li class="nav-p" id="p1">home
+                        
+                    </li>
+                    <li class="nav-p" id="p2"><a href="page1.html">how to</a>
+                        <ul>
+                            <li><a href="page1.html#no1">筋トレ入門</a></li>
+                        <li><a href="page1.html#no2">食事内容</a></li>
+                        <li><a href="page1.html#no3">筋トレ道具</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-p" id="p3"><a href="page2.html">form</a>
+                        
+                    </li>
+                </ul>
+                <br>
+                <h1 class="title">1.筋トレに出会うまで...</h1>
+                <figure class="flow">
+                    <figcaption class="hito show">
+                        <p class="ore">俺</p>
+                        <img id="hito" src="img/hito.png">
+                    </figcaption>
+                    <figcaption class="cycle">
+                        <img src="img/cycle.png">
+                    </figcaption>
+                </figure>
                 
-                <div class="box">
-                    
-                    </div>
-
-                    <div class="box_text">
-                        <p  class="Explanation_1">
-                            こんにちは。<br></br>
-                            　こんばんは。<br></br>
-                            　　おはよう。<br></br>
-                            　　　清原翔です。<br></br>
-                            　　　　モデルです。<br></br>
+                
+                
+                <figure class="line">
+                    <figcaption class="hito2 hide">
+                        <img id="hito2" src="img/hito.png">
+                    </figcaption>
+                    <hr id="line1" class="ver" noshade >
+                </figure>
+                
+                
+                <div class="hide-content" id="content1">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" src="img/friend.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word">暇だし筋トレしね？</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>1.&emsp;すべての始まり</h3>
+                        <p>&emsp;&emsp;すべての始まりは高3の秋...<br>
+                            &emsp;&emsp;進路が決まった友人が言ったこの一言で筋トレを始める。<br>
+                            &emsp;&emsp;もともと筋トレに興味があったが、この時はあまり乗り気<br>
+                            &emsp;&emsp;ではなかった。
                         </p>
-
+                    </div>                    
+                </div>
+                <div class="content" id="hide1"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content" id="content2">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" id="friend2" src="img/friend2.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word2">けっこう筋肉ついてきたな！</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>2.&emsp;3ヶ月ほどたった時のこと</h3>
+                        <p>&emsp;&emsp;３ヶ月ほどたちいつも通り筋トレしていたら、ふと友人に<br>
+                            &emsp;&emsp;こう言われた。いままで始めても三日坊主だった私がなぜ<br>
+                            &emsp;&emsp;３ヶ月も続けることができたのか。やはり、共通の趣味を<br>
+                            &emsp;&emsp;持つ人が身近にいたからだろう。
+                        </p>
+                        <p class="point">※一般的に筋トレ開始から1ヶ月ほどで体の変化が目に見えて出てくるといわれている。</p>
                     </div>
                 </div>
-                
-                 
-               
-
-            </section>
-
-
-
-            <div class="scroll_Pic ver2"> </div>
-    
-            <section class="work_2">
-                
-                <div class="Explanation2">
-                    <p>今は俳優をしています。<br></br>ドラマでも活躍しています<br></br</p>
-                </div>
-
-                <div class="img_Pic2">
-
-                    <img src="sources/img/tokyoLoveStory_kiyohara.jpg" width="800" height="500" alt="2枚目の画像" class="pic_2">
-
-                </div>
-
-                
-
-            </section>
-
-            <div class="scroll_Pic ver3"> </div>
-
-            <section>
-
-                <div class="img_Pic3">
-
-                    <img src="sources/img/0-2.png" width="500" height="400"  class="pic_3">
-
-                </div>
-
-                <div class="Explanation3">
-                    <p>今は俳優をしています。ドラマでも活躍しています</p>
-                </div>
-            
-
-            </section>
-
-        </section>
-
-
-
-        <section id="location">
-
-            <div class="wrapper">
-
-                <div class="location-info">
-
-                    <h3 class="sub-title">カフェ　中央駅前店</h3>
-
-                        <p>
-                            住所 : 鹿児島県鹿児島市<br>
-                            電話 : 000-0000-0000<br>
-                            営業時間 : 10:00 ~ 20:00<br>
-                            休日 : 日曜日
-
+                <div class="content" id="hide2"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content" id="content3">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" id="friend2" src="img/friends.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word3">俺たちも筋トレしてぇ</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>3.&emsp;新たな仲間</h3>
+                        <p>&emsp;&emsp;今までは最初に誘ってきた友人と二人で取り組んできた筋<br>
+                            &emsp;&emsp;トレだったが、進路が決まったほかの友人たちも筋トレに<br>
+                            &emsp;&emsp;興味を持ち始め、筋トレ仲間が数人増えた。筋トレ人口が<br>
+                            &emsp;&emsp;多くなることで、モチベーションアップにつながった。
                         </p>
                         
-                    </h3>
-
-                    
+                    </div>
                 </div>
-
-                <div class="location-map">
-                    googleマップ
+                <div class="content" id="hide3"></div>
+                <figure class="line">
                     
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8157274828145!2d130.5416319954171!3d31.584088116955026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e67500e76a019%3A0xa3c15e1f9b25aa78!2z5Lit5bGx5Lqt!5e0!3m2!1sja!2sjp!4v1598712791917!5m2!1sja!2sjp" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content"id="content4">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" id="graduate" src="img/graduate.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word4">筋肉は裏切らない</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>4.&emsp;解散</h3>
+                        <p>&emsp;&emsp;高校卒業を迎え、友人と筋トレをすることができなくなっ<br>
+                            &emsp;&emsp;てしまった。また、新生活の準備で一か月ほど筋トレから<br>
+                            &emsp;&emsp;離れてしまう。<br>
+                        </p>
+                        <p class="point">
+                            ※筋トレをやめてから約2週間は筋力の低下は起きにくい。3週間目から徐々に低下していく。
+                        </p>
+                    </div>
                 </div>
-
-            </div>
-
+                <div class="content" id="hide4"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content"id="content5">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" id="bags" src="img/bags.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word5">期待と不安</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>5.&emsp;新生活</h3>
+                        <p>
+                            &emsp;&emsp;ついに島から本土に引っ越し。慣れない一人暮らしに不安<br>
+                            &emsp;&emsp;はあったが、頭の片隅にあるのは筋トレ。せっかくだしジ<br>
+                            &emsp;&emsp;ムを契約しようと、ジム探しを始める。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="content" id="hide5"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content"id="content6">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img id="jym" src="img/jym.jfif">
+                        </figcaption>
+                    </figure>
+                    <div class="chapter">
+                        <br>
+                        <br>
+                        <h3>6.&emsp;ジムの入会</h3>
+                        <p>
+                            &emsp;&emsp;新生活が始まって一週間ほどたったころ天文館のジムに通<br>
+                            &emsp;&emsp;うことを決める。会費は月額6500円。<br>
+                            &emsp;&emsp;<br>
+                        </p>
+                        <p class="point">※画像はあくまでイメージです。</p>
+                    </div>
+                </div>
+                <div class="content" id="hide6"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" nonshade>
+                </figure>
+                <div class="hide-content" id="content7">
+                    <figure class="block">
+                        <figcaption class="block1">
+                            <img class="friend" id="muscle" src="img/muscle.png"><img id="comment" src="img/hukidasi.png">
+                        </figcaption>
+                        <p class="word6">体重+10kg</p>
+                    </figure>
+                    <div class="chapter">
+                        <h3>7.&emsp;筋トレ歴一年</h3>
+                        <p>
+                            &emsp;&emsp;筋トレを初めて一年が経過し、明らかに一年前の体から変<br>
+                            &emsp;&emsp;っていた。体重は10kg増え75kgに。継続の大切さと効果を<br>
+                            &emsp;&emsp;改めて確認した。<br>
+                        </p>
+                        <p class="point">
+                            ※筋トレはすぐに効果は出ない。継続こそ筋トレの本質。
+                        </p>
+                    </div>
+                </div>
+                <div class="content" id="hide7"></div>
+                <figure class="line">
+                    <hr id="line1" class="ver" noshade>
+                </figure>
+                <figure class="last">
+                    <figcaption>
+                        <img class="cycle2" src="img/cycle.png">
+                    </figcaption>
+                    <p class="current">現在</p>
+                </figure>
                 
-        </section>
-
-
-        
-
-        <footer class="footer">
-            <p>(c) dotinstall.com</p>
-        </footer>
-
-        <!---作品紹介_コメントアウト方法-->
-
-
+                <div class="img-anime">
+                    <p class="count">0回</p>
+                    <img class="appear" id="id-img1" src="img/benti2.jpeg">
+                    <img class="hidden" id="id-img2" src="img/benti.jpeg"><br>
+                    <button class="btn" id="id-btn">筋トレ!!!</button>
+                </div>
+                
+                <div class="footer">
+                    <h2>Information:</h2>
+                    <p>名前&emsp;&emsp;&emsp;: 荒川　歩夢</p>
+                    <p>性別&emsp;&emsp;&emsp;: 男</p>
+                    <p>誕生日&emsp;&emsp;: 2001/12/12</p>
+                    <p>好きな部位: 広背筋,三角筋</p>
+                </div>
+            </div>
+        </div>
+        <a class="top" href="">TOP</a>
     </body>
-
-
 </html>
