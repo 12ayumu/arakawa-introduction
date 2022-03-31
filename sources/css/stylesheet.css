@@ -1,0 +1,243 @@
+/* h1{
+    color:blue;
+    color:rgb(0,255,0);
+} */
+
+body{
+    color:#333;
+    font-family:Verdana,sans-selif;
+    /* background-color:pink; */
+
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+.container{
+    /* background-color:pink; */
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    align-items: center;
+    
+}
+
+header{
+    background-color:#efefef;
+    padding-top:32px;
+    padding-bottom:32px;
+
+}
+
+ .icon{
+    /* background-color:skyblue; */
+} 
+
+.icon img{
+    border-radius:50%;
+    border-width:10px;
+    border-style:solid;
+    border-color:white;
+}
+
+.info{
+    /* background-color:tomato; */
+    width:800px;
+    margin-left:32px;
+    margin-right:32px;
+}
+
+.info h1{
+    font-weight:normal ;
+    font-size:50px;
+    margin:0;
+
+}
+
+.info p{
+    margin:0;
+    margin-bottom:16px;
+}
+
+.info ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:flex;
+}
+
+.info li{
+    width:100px;
+    margin-right:30px;
+}
+
+.menu_Logo{
+    margin-top:20px;
+    
+}
+
+
+
+
+.works > section{
+    
+    height:100%;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+   
+
+}
+
+.works > h1{
+    font-weight:normal;
+    font-size:24px;
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.works > section{
+    margin-bottom:60px;
+}
+
+.works > section h1{
+    color:red;
+}
+
+.pic_1{
+    margin-left:auto;
+    margin-right:auto;
+    
+    border: 5px dashed #999;
+}
+.pic_2{
+    padding-left:auto;
+    margin-right:auto;
+    
+    border: 5px dashed #999;
+}
+.pic_3{
+    margin-left:auto;
+    margin-right:auto;
+   
+    border: 5px dashed #999;
+}
+
+footer p{
+    text-align:center;
+    font-weight:small;
+    font-size:14px;
+    margin-top:100px;
+    margin-bottom:50px;
+    color:gray;
+}
+
+.scroll_Pic{
+
+    height:500px;
+    /* background-image:url("sources/img/tokyoLoveStory_kiyohara.jpg"); */
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+.ver1{
+    background-image:url("../img/清原翔_1.jpg");
+    margin-bottom:100px;
+}
+
+.ver2{
+    background-position-y:-100px;
+    background-image:url("../img/Mensnono_kiyohara.jpg");
+    margin-bottom:100px;
+}
+
+
+.ver3{
+    background-image:url("../img/tokyoLoveStory_kiyohara.jpg");
+    margin-bottom:100px;
+
+}
+
+
+.Explanation_1{
+    background-color:white;
+    position:relative;
+    z-index:20000;
+}
+
+/* https://homepagenopro.com/html/html02.html */
+/*htmlの要素を書くときは、左から並んでいくことを意識する*/
+.Explanation2{
+    vertical-align:top;
+    font-size:30px;
+    font-weight:bolder;
+    font-family:"ヒラギノ明朝 ProN W3";
+
+    /* 左の端と、右に並ぶ画像との間隔調整 */
+    margin-left:30px;
+    margin-right:100px;
+
+}
+
+.img_Pic2,
+.Explanation2{
+    display:inline-block;
+}
+
+.name_2{
+    /* 全体からの割合 */
+    margin-left:500px;   
+}
+.img_Pic3,
+.Explanation3,
+.name_3{
+    text-align:center;
+}
+
+
+
+/* display:inline-block;とは */
+.box_image,
+.box_text{
+    display:inline-block;
+    
+    margin-bottom:100;
+}
+.box_text{
+    font-size:40px;
+    font-family:"ヒラギノ明朝 ProN W3";
+    margin-left:10%;
+    vertical-align:top;
+}
+
+#location{
+    padding:4% 0;
+}
+
+.wrapper{
+    display:flex;  /*範囲内の要素を、横並びに変更*/
+    justify-content:space-between;  /*各アイテムを均等に配置し最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる*/
+}
+
+.location-info{
+    width:22%;
+}
+
+.location-info p{
+    padding:12px 10px;
+}
+
+.location-map{
+    width:74%;
+}
+
+iframe{
+    width:90%;
+    margin-right:100px;
+}
+
+
+
